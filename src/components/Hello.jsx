@@ -1,7 +1,7 @@
-function Hello({ message, name, emoji }) {
+function Hello({ message, name, emoji, seatNumbers }) {
   return (
     <h1>
-      {message} {emoji} {name}
+      {message} {emoji} {name} {seatNumbers}
     </h1>
   );
 }
