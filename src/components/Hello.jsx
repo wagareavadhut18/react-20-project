@@ -1,11 +1,10 @@
-const name = "Robert";
-
-function displayMessage() {
-  return "Wow!";
-}
-
-function Hello() {
-  return <h1>Hello from component!{displayMessage() + name}</h1>;
+function Hello(props) {
+  console.log(props);
+  return (
+    <h1>
+      {props.message} {props.name}
+    </h1>
+  );
 }
 
 export default Hello;
