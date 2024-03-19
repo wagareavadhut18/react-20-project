@@ -8,11 +8,10 @@ function App() {
     emoji: "👋",
     seatNumbers: [1, 4, 7],
   };
-  const fruits = ["apple", "banana", "mango", "orange", "grapes"];
   return (
     <div className="App">
       <Hello person={person} />
-      <Fruits fruits={fruits} />
+      <Fruits />
     </div>
   );
 }
