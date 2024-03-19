@@ -3,9 +3,11 @@ import Welcome from "./Welcome";
 
 export default function ConditionalComponent() {
   const display = true;
+  let message;
   if (display === true) {
-    return <Welcome />;
+    message = <h1>true element</h1>;
   } else {
-    return <Code />;
+    message = <h1>false element</h1>;
   }
+  return message;
 }
